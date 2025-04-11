@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Previous head content remains the same until the closing </style> tag -->
+  </style>
+  <script>
+    // Previous script functions remain the same
+    // Add this new function
+    function scrollToAbout() {
+      document.getElementById("about").scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Sip & Savor</h1>
+    <nav>
+      <a href="#home" onclick="scrollToHome()">Home</a>
+      <a href="#about" onclick="scrollToAbout()">About</a>
+      <a href="#products" onclick="scrollToProducts()">Beverages</a>
+      <a href="#contact" onclick="scrollToContact()">Contact</a>
+    </nav>
+  </header>
+<section class ="section" id="home">
+<div class="home-container">
+<div class="about-image">
+<h3> WELCOME!!</h3>
+<p>we are the university of vignan </p>
+<p>our blocks</p>
+<p>A-Block</p>
+<p>U-Block</p>
+<p>H-Block</p>
+<p>MHP</p>
+and we are offering you an bevergaes go an have a glane </p>
+        <img src="C:\Users\admin\Downloads\university.jpeg" alt="Sip & Savor Cafe">
+      </div>
+
+
+
+  <!-- Add this new About section right after the hero section -->
+  <section class="section" id="about">
+    <div class="about-container">
+      <div class="about-content">
+        <h2>Our Story</h2>
+        <p>At Sip & Savor, we believe that every sip should be an experience. Our journey began with a simple yet powerful idea: to create premium beverages that delight the senses and connect people through quality and flavor.</p>
+        
+        <h3>Why beverages?</h3>
+        <p>Beverages are essential for maintaining hydration, providing nutrients, and supporting overall health. They help regulate body temperature, aid in digestion, and contribute to the elimination of waste products.</p>
+        
+        <h3>Carbonated drinks</h3>
+        <p>
+Soft Drinks: These are typically sweetened, flavored, and carbonated beverages, like sodas, colas, and lemon-lime drinks. 
+Sparkling Water: Water infused with carbon dioxide, offering a refreshing and bubbly experience.</p>      
+	<h3>Non-carbonated drinks</h3>
+	<p>Juices: Naturally sweet, extracted from fruits or vegetables, often consumed as a source of vitamins and nutrients. 
+Milk: A nutrient-rich beverage, a source of calcium, protein, and other essential nutrients. 
+Tea: A brewed beverage made from dried tea leaves, available in various flavors and types (e.g., black, green, herbal). 
+Coffee: A brewed beverage made from roasted coffee beans, providing a stimulating effect. 
+Other: Includes drinks like water, herbal infusions, and smoothies.</p>   
+        <h3>Vision ahead</h3>
+        <p>As we look to the future, Sip & Savor remains focused on bringing people together—whether it’s for a quiet moment of reflection or a lively celebration. We’re excited to continue crafting beverages that inspire and delight, making every moment memorable.</p>
+<section class ="section" id="home">
+<div class="about-container">
+<div class="about-image">
+<div class="card">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Sip & Savor Cafe">
+      </div>
+
+        
+        <div class="mission-statement">
+          <h3>Our Mission</h3>
+          <blockquote>
+            "To refresh your world with thoughtfully crafted beverages that awaken the senses and create moments of connection."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sip & Savor - Premium Beverages</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+      background: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background: #fff7f0;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #5d3a00;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5d3a00;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1542444459-db43f393ef2d') center/cover no-repeat;
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+
+    .hero button {
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background: #ff7f50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #ff5c2b;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .search-bar {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .search-bar input {
+      padding: 0.7rem;
+      width: 300px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      font-size: 1.2rem;
+      color: #5d3a00;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #e67e22;
+      margin-top: 0.5rem;
+    }
+
+    /* Contact Section Styles */
+    .contact-section {
+      background: #fff7f0;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .contact-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 300px;
+      text-align: left;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h2 {
+      color: #5d3a00;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #5d3a00;
+      font-weight: bold;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      background: #ff7f50;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #ff5c2b;
+    }
+
+    .contact-info h2 {
+      color: #5d3a00;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-details {
+      margin-bottom: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .contact-item i {
+      margin-right: 1rem;
+      color: #ff7f50;
+      font-size: 1.2rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      color: #5d3a00;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #ff7f50;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #5d3a00;
+      color: white;
+    }
+
+    /* Success message */
+    .success-message {
+      display: none;
+      background: #4CAF50;
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+  </style>
+  <script>
+    function filterProducts() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const title = card.querySelector('h3').innerText.toLowerCase();
+        card.style.display = title.includes(input) ? 'block' : 'none';
+      });
+    }
+
+    function scrollToProducts() {
+      document.getElementById("products").scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function scrollToContact() {
+      document.getElementById("contact").scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function submitContactForm(event) {
+      event.preventDefault();
+      
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      
+      // Simple validation
+      if (!name || !email || !subject || !message) {
+        alert('Please fill in all fields');
+        return;
+      }
+      
+      // In a real application, you would send this data to a server
+      console.log('Form submitted:', { name, email, subject, message });
+      
+      // Show success message
+      document.getElementById('successMessage').style.display = 'block';
+      
+      // Reset form
+      document.getElementById('contactForm').reset();
+      
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        document.getElementById('successMessage').style.display = 'none';
+      }, 5000);
+    }
+  </script>
+</head>
+<body>
+ 
+  
+  <section class="section" id="products">
+    <h2 style="text-align:center">Our Beverages</h2>
+    <div class="search-bar">
+      <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Search beverages...">
+    </div>
+    <div class="products">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnJZynNEe8WpfajsQ1atfFbpvXdJOgiljGsw&s" alt="Iced Coffee">
+        <div class="card-content">
+          <h3>Iced Coffee</h3>
+          <div class="price">₹90</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGhfV9NvNziHsKzPgkWteTsSt9KgVjO6_Ujg&s" alt="Fruit Smoothie">
+        <div class="card-content">
+          <h3>Fruit Smoothie</h3>
+          <p>Freshly blended tropical fruits, naturally sweet.</p>
+          <div class="price">₹150</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.treehugger.com/thmb/uWQw8MStw9Zetyqli_5F3qoS9Dc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tea-cup-with-several-dried-tea-leaves-and-flowers-1201496311-55f0a4dfdbc54605966a0a9ec2f40f3c.jpg" alt="Herbal Tea">
+        <div class="card-content">
+          <h3>Herbal Tea</h3>
+          <p>Soothing infusion of chamomile, mint, and lavender.</p>
+          <div class="price">₹250</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLN2S05HmFGdrVL7lZkxPkBVdxzJw1yWhhw&s" alt="Green Juice">
+        <div class="card-content">
+          <h3>Green Juice</h3>
+          <p>A detoxifying blend of kale, apple, cucumber, and lemon.</p>
+          <div class="price">₹150</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://ippodotea.com/cdn/shop/articles/iced-matcha-latte-bowl-with-spout-two-glasses_1024x1024.png?v=1685047350" alt="Matcha Latte">
+        <div class="card-content">
+          <h3>Matcha Latte</h3>
+          <p>Velvety blend of premium matcha and oat milk.</p>
+          <div class="price">₹250</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://thecookful.com/wp-content/uploads/2019/07/pitcher-of-lemonade-DSC_5920-feature-680.jpg" alt="Classic Lemonade">
+        <div class="card-content">
+          <h3>Classic Lemonade</h3>
+          <p>Refreshing, tangy lemonade with a touch of mint.</p>
+          <div class="price">₹150</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://idrinkproducts.com/cdn/shop/articles/Homemade_Orange_Soda.png?v=1648660446" alt="Orange Soda">
+        <div class="card-content">
+          <h3>Orange Soda</h3>
+          <p>Fizzy and sweet citrus burst in every sip.</p>
+          <div class="price">₹90</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKHxVsI0e8v6dKwpgokwvrohgx3W2_dCSpA&s" alt="Cola">
+        <div class="card-content">
+          <h3>Cola</h3>
+          <p>Classic cola flavor with a bold and bubbly twist.</p>
+          <div class="price">₹90</div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://somethingiscooking.com/wp-content/uploads/2017/10/fresh-lime-soda-2.jpg" alt="Lime Soda">
+        <div class="card-content">
+          <h3>Lime Soda</h3>
+          <p>Cool and tangy lime with a fizzy sparkle.</p>
+          <div class="price">₹40</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i>📍</i>
+            <div>
+              <h3>Address</h3>
+              <p>Vignan university,vadlamudi</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i>✉</i>
+            <div>
+              <h3>Email</h3>
+              <p>info@sipandsavor.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i>📞</i>
+            <div>
+              <h3>Phone</h3>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i>⏰</i>
+            <div>
+              <h3>Hours</h3>
+              <p>Monday-Friday: 9am - 8pm<br>Saturday-Sunday: 10am - 6pm</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h2>Send Us a Feedback</h2>
+        <div id="successMessage" class="success-message">
+          Thank you for your message! We'll get back to you soon.
+        </div>
+        <form id="contactForm" onsubmit="submitContactForm(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sip & Savor. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+  
+  <!-- Add this new CSS for the About section -->
+  <style>
+    /* Add this to your existing style section */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      align-items: center;
+    }
+    
+    .about-image {
+      flex: 1;
+      min-width: 300px;
+    }
+    
+    .about-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .about-content {
+      flex: 1;
+      min-width: 300px;
+    }
+    
+    .about-content h2 {
+      font-family: 'Playfair Display', serif;
+      color: #5d3a00;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .about-content h3 {
+      color: #5d3a00;
+      margin: 1.5rem 0 1rem;
+      font-size: 1.5rem;
+    }
+    
+    .about-content p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    
+    .about-content ul {
+      margin: 1rem 0 1rem 2rem;
+    }
+    
+    .about-content li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .mission-statement {
+      background: #fff7f0;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+    
+    blockquote {
+      font-style: italic;
+      color: #5d3a00;
+      border-left: 4px solid #ff7f50;
+      padding-left: 1rem;
+      margin: 1rem 0;
+    }
+    
+    /* Add this new function to your script section */
+    function scrollToHome() {
+      document.getElementById("home").scrollIntoView({ behavior: 'smooth' });
+    }
+  </style>
+</body>
+</html>
